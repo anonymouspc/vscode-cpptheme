@@ -1,26 +1,26 @@
 {
-	"name": "vscode-cpp-highlight",
-	"displayName": "vscode-cpp-highlight",
-	"description": "vscode-cpp-highlight",
+	"name": "cpptheme",
+	"displayName": "cpptheme",
+	"description": "cpptheme",
 	"version": "1.0.0",
 	"publisher": "anonymouspc",
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.100.0"
 	},
 	"contributes": {
 		"grammars": [
             {
-                "path": "./syntaxes/module.json",
+                "path": "./syntax/module.json",
                 "scopeName": "module.injection",
                 "injectTo": ["source.cpp"]
             },
             {
-                "path": "./syntaxes/preprocessor.json",
+                "path": "./syntax/preprocessor.json",
                 "scopeName": "preprocessor.injection",
                 "injectTo": ["source.cpp"]
             },
             {
-                "path": "./syntaxes/punctuation.json",
+                "path": "./syntax/punctuation.json",
                 "scopeName": "punctuation.injection",
                 "injectTo": ["source.cpp"]
             }
@@ -28,6 +28,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/anonymouspc/vscode-cpp-highlight"
+		"url": "https://github.com/anonymouspc/cpptheme"
 	}
 }

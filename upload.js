@@ -8,5 +8,6 @@ catch (error) {
     // pass
 }
 
-child_process.execSync("vsce publish patch")
+token = readFile("../token/vsce.personal-access.token")
+child_process.execSync(`vsce publish -p ${token} patch`)
 child_process.execSync("git push")

@@ -4,12 +4,12 @@
 	"description": "cpptheme",
 	"icon": "share/package.png",
 	"publisher": "anonymouspc",
-	"version": "1.1.28",
+	"version": "1.1.29",
 	"engines": {
 		"vscode": "^1.100.0"
 	},
 	"categories": [
-        "Language Packs",
+		"Language Packs",
 		"Themes"
 	],
 	"repository": {
@@ -66,18 +66,18 @@
 				"path": "grammar/punctuation.json"
 			}
 		],
-        "localizations": [
-            {
-                "languageId": "cpp-zh-cn",
-                "languageName": "C++ Chinese Simplified",
-                "localizedLanguageName": "C++ 中文(简体)",
-                "translations": [
-                    {
-                        "id": "vscode",
-                        "path": "locale/cpp-zh-cn.json"
-                    }
-                ]
-            }
-        ]
+		"localizations": [
+			{
+				"languageId": "cpp-zh-cn",
+				"languageName": "C++ Chinese Simplified",
+				"localizedLanguageName": "C++ 中文(简体)",
+				"translations": [
+					{
+						"id": "vscode",
+						"path": "locale/cpp-zh-cn.json"
+					}
+				]
+			}
+		]
 	}
 }

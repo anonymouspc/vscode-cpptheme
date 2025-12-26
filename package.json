@@ -68,13 +68,13 @@
 		],
 		"localizations": [
 			{
-				"languageId": "cpp-zh-cn",
-				"languageName": "C++ Chinese Simplified",
-				"localizedLanguageName": "C++ 中文(简体)",
+				"languageId": "zh-cn",
+				"languageName": "Chinese Simplified",
+				"localizedLanguageName": "中文(简体)",
 				"translations": [
 					{
 						"id": "vscode",
-						"path": "locale/cpp-zh-cn.json"
+						"path": "locale/zh-cn.json"
 					}
 				]
 			}

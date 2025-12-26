@@ -22,7 +22,7 @@
         "editorOverviewRuler.border": "#ffffff",
         "editorSuggestWidget.background": "#ffffff",
         "editorSuggestWidget.border": "#e0e0e0",
-        "focusBorder": "#ffffff",
+        "focusBorder": "#d0d0d0",
         "input.background": "#ffffff",
         "input.border": "#e0e0e0",
         "list.activeSelectionBackground": "#ffffff",

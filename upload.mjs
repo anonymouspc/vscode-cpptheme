@@ -55,7 +55,7 @@ try {
     json["contents"]["vs/workbench/contrib/callHierarchy/browser/callHierarchyTree"]["tree.aria"]                 = "函数层次结构"
     json["contents"]["vs/workbench/contrib/callHierarchy/browser/callHierarchyTree"]["from"]                      = "被调用 (called)"
     json["contents"]["vs/workbench/contrib/callHierarchy/browser/callHierarchyTree"]["to"]                        = "调用 (call)"
-    json["contents"]["vs/workbench/contrib/callHierarchy/browser/callHierarchy.contribution"]["title"]            = "查看类型层次结构"
+    json["contents"]["vs/workbench/contrib/callHierarchy/browser/typeHierarchy.contribution"]["title"]            = "查看类型层次结构"
     await fs.promises.writeFile("locale/zh-cn.json", JSON.stringify(json, null, 4))
 } catch (_) {
     console.warn("warning: failed to update locale/zh-cn.json")

@@ -5842,21 +5842,22 @@
             "showIncomingCallsIcons": "通话层次结构视图中来电的图标。",
             "showOutgoingCallsIcon": "通话层次结构视图中去电的图标。",
             "title": "函数层次结构",
-            "title.incoming": "显示被调用",
-            "title.outgoing": "显示调用",
+            "title.incoming": "显示被调用 (called)",
+            "title.outgoing": "显示调用 (call)",
             "title.refocus": "重新聚焦调用层次结构"
         },
         "vs/workbench/contrib/callHierarchy/browser/callHierarchyPeek": {
-            "callFrom": "来自\"{0}\"的调用",
+            "callFrom": "被调用 (called)",
             "callsTo": "\"{0}\"的调用方",
-            "empt.callsFrom": "没有来自 \"{0}\" 的调用",
-            "empt.callsTo": "没有\"{0}\"的调用方",
-            "title.loading": "正在加载..."
+            "empt.callsFrom": "没有被其他函数调用",
+            "empt.callsTo": "没有调用其他函数",
+            "title.loading": "正在加载...",
+            "callTo": "调用 (call)"
         },
         "vs/workbench/contrib/callHierarchy/browser/callHierarchyTree": {
-            "from": "来自 {0} 的调用",
-            "to": "{0} 的调用方",
-            "tree.aria": "调用层次结构"
+            "from": "被调用 (called)",
+            "to": "调用 (call)",
+            "tree.aria": "函数层次结构"
         },
         "vs/workbench/contrib/chat/browser/actions/chatAccessibilityActions": {
             "chat.category": "聊天",
@@ -15997,7 +15998,7 @@
             "editorHasTypeHierarchyProvider": "类型层次结构提供程序是否可用",
             "error": "未能显示类型层次结构",
             "no.item": "无结果",
-            "title": "类型层次结构",
+            "title": "速览类型层次结构",
             "title.refocusTypeHierarchy": "重新专注类型层次结构",
             "title.subtypes": "显示子类型",
             "title.supertypes": "显示父类型",

@@ -20,7 +20,23 @@ try {
 try {
     await child_process.exec("git clone https://github.com/microsoft/vscode-loc .tmp --depth 1")
     let json = JSON.parse((await fs.promises.readFile(".tmp/i18n/vscode-language-pack-zh-hans/translations/main.i18n.json")).toString())
-    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.goToDecl.label"] = "haha!"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.goToDecl.label"              ] = "转到实现 (implement)"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.goToDeclaration.label"       ] = "转到声明 (declare)"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.goToTypeDefinition.label"    ] = "转到类型 (class)"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.goToImplementation.label"    ] = "转到虚实现 (virtual)"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.goToReferences.label"        ] = "转到调用 (caller)"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["peek.submenu"                        ] = "速览"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.previewDecl.label"           ] = "速览实现 (implement)"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.previewclaration.label"      ] = "速览声明 (declare)"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.previewTypeDefinition.label" ] = "速览类型 (class)"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.previewImplementation.label" ] = "速览虚实现 (virtual)"
+    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.previewReferences.label"     ] = "速览调用 (caller)"
+    json["contents"]["vs/workbench/contrib/callHierarchy/browser/callHierarchy.contribution"]["title"           ] = "函数层次结构"
+    json["contents"]["vs/workbench/contrib/callHierarchy/browser/callHierarchy.contribution"]["title.incoming"  ] = "显示被调用"
+    json["contents"]["vs/workbench/contrib/callHierarchy/browser/callHierarchy.contribution"]["title.outgoing"  ] = "显示调用"
+    json["contents"]["vs/workbench/contrib/typeHierarchy/browser/typeHierarchy.contribution"]["title"           ] = "类型层次结构"
+    json["contents"]["vs/workbench/contrib/typeHierarchy/browser/typeHierarchy.contribution"]["title.supertypes"] = "显示父类型"
+    json["contents"]["vs/workbench/contrib/typeHierarchy/browser/typeHierarchy.contribution"]["title.subtypes"  ] = "显示子类型"
     await fs.promises.writeFile("locale/cpp-zh-cn.json", JSON.stringify(json))
 } catch (_) {
     console.warn("warning: failed to update locale/cpp-zh-cn.json")
@@ -34,7 +50,7 @@ try {
     await child_process.exec("git commit -m update")
 } catch (_) { }
 
-// Vscode upload
+// Vsce upload
 try {
     await fs.promises.access("vsce-token.txt")
 } catch (_) {

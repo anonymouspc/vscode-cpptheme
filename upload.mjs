@@ -31,7 +31,6 @@ try {
     json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.peekDecl.label"]               = "查看实现 (implement)"
     json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.peekTypeDefinition.label"]     = "查看类型 (class)"
     json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.peekImplementation.label"]     = "查看虚实现 (virtual)"
-    json["contents"]["vs/editor/contrib/gotoSymbol/browser/goToCommands"]["actions.peekReferences.label"]         = "查看调用 (caller)"
     json["contents"]["vs/workbench/contrib/callHierarchy/browser/callHierarchy.contribution"]["title"]            = "函数层次结构"
     json["contents"]["vs/workbench/contrib/callHierarchy/browser/callHierarchy.contribution"]["title.incoming"]   = "显示被调用 (called)"
     json["contents"]["vs/workbench/contrib/callHierarchy/browser/callHierarchy.contribution"]["title.outgoing"]   = "显示调用 (call)"

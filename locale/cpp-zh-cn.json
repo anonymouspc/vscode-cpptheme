@@ -1360,8 +1360,7 @@
             "references.action.label": "查看引用",
             "references.no": "未找到\"{0}\"的引用",
             "references.noGeneric": "未找到引用",
-            "typedef.title": "类型定义",
-            "actions.peekReferences.label": "查看调用 (caller)"
+            "typedef.title": "类型定义"
         },
         "vs/editor/contrib/gotoSymbol/browser/link/goToDefinitionAtPosition": {
             "multipleResults": "单击显示 {0} 个定义。"

@@ -5,6 +5,8 @@
         "activityBar.background": "#ffffff",
         "activityBar.foreground": "#000000",
         "activityBar.activeBorder": "#ffffff",
+        "dropdown.background": "#ffffff",
+        "dropdown.border": "#e0e0e0",
         "editor.background": "#ffffff",
         "editor.findMatchBackground": "#d0d0d0",
         "editor.findMatchHighlightBackground": "#e0e0e0",

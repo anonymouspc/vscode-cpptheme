@@ -75,7 +75,6 @@ try {
 } catch (_) {
     throw new Error("failed to upload vscode extension because vsce-token.txt is not found")
 }
-child_process.exec()
 try {
     await child_process.promises.exec(`vsce publish patch --pat ${await fs.promises.readFile("vsce-token.txt")}`)
 } catch (_) {

@@ -3,6 +3,7 @@
     "tasks": [
         {
             "label": "install",
+            "detail": "node install.js",
             "group": "build",
             "command": "node",
             "args": [
@@ -11,6 +12,7 @@
         },
         {
             "label": "upload",
+            "detail": "node upload.js",
             "group": "build",
             "command": "node",
             "args": [

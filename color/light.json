@@ -35,6 +35,7 @@
         "list.inactiveSelectionBackground": "#ffffff",
         "menu.background": "#ffffff",
         "menu.border": "#e0e0e0",
+        "menu.selectionBorder": "#e0e0e0",
         "menu.separatorBackground": "#e0e0e0",
         "peekView.border": "#e0e0e0",
         "peekViewEditor.background": "#ffffff",
@@ -50,6 +51,8 @@
         "terminal.border": "#ffffff",
         "titleBar.activeBackground": "#ffffff",
         "titleBar.inactiveBackground": "#ffffff",
+        "toolbar.hoverBackground": "#ffffff",
+        "toolbar.hoverOutline": "#e0e0e0",
         "tab.activeBackground": "#ffffff",
         "tab.border": "#ffffff",
         "tab.inactiveBackground": "#ffffff"

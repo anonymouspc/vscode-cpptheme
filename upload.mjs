@@ -25,7 +25,8 @@ try {
     // Update package.json
     let from_package = JSON.parse((await fs.promises.readFile(".tmp/i18n/vscode-language-pack-zh-hans/package.json")).toString())
     let to_package   = JSON.parse((await fs.promises.readFile("package.json")).toString())
-    to_package.contributes.localizations.translations = []
+    to_package["contributes"]["localizations"]["translations"] = []
+    console.log(from_package)
     for (let locale in from_package["contributes"]["localizations"]["translations"]) {
         console.log(`add locale ${locale}`)
         to_package["contributes"]["localizations"].push({

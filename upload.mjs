@@ -27,6 +27,7 @@ try {
     let to_package   = JSON.parse((await fs.promises.readFile("package.json")).toString())
     to_package.contributes.localizations.translations = []
     for (let locale in from_package["contributes"]["localizations"]["translations"]) {
+        console.log(`add locale ${locale}`)
         to_package["contributes"]["localizations"].push({
             "id": locale["id"],
             "path": locale["path"].replace("translations", "locale")

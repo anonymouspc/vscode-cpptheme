@@ -25,17 +25,11 @@ try {
     // Update package.json
     let from_package = JSON.parse((await fs.promises.readFile(".tmp/i18n/vscode-language-pack-zh-hans/package.json")).toString())
     let to_package   = JSON.parse((await fs.promises.readFile("package.json")).toString())
-    to_package["contributes"]["localizations"]["translations"] = []
-    console.log(from_package)
-    for (let locale in from_package["contributes"]["localizations"]["translations"]) {
-        console.log(`add locale ${locale}`)
-        to_package["contributes"]["localizations"].push({
-            "id": locale["id"],
-            "path": locale["path"].replace("translations", "locale")
-        })
-    }
-    to_package["contributes"]["localizations"]["translations"].sort()
-    console.log(to_package)
+    let localizations = from_package["contributes"]["localizations"]
+    for (let localization of localizations)
+        for (let translation of localization["translations"])
+            translation["path"] = translation["path"].replace("translations", "locale")
+    to_package["contributes"]["localizations"] = localizations
     await fs.promises.writeFile("package.json", JSON.stringify(to_package, null, 4))
 
     // Update locale/main.i18n.json

@@ -51,6 +51,7 @@
         "scrollbarSlider.hoverBackground": "#d0d0d080",
         "sideBar.background": "#ffffff",
         "sideBarSectionHeader.background": "#ffffff",
+        "simpleFindWidget.sashBorder": "#ffffff",
         "terminal.border": "#ffffff",
         "titleBar.activeBackground": "#ffffff",
         "titleBar.inactiveBackground": "#ffffff",

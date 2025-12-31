@@ -21,7 +21,7 @@
         "editorGroupHeader.tabsBackground": "#000000",
         "editorHoverWidget.background": "#000000",
         "editorHoverWidget.border": "#404040",
-        "editorOverviewRuler.border": "#000000",
+        "editorOverviewRuler.border": "#00000000",
         "editorSuggestWidget.background": "#000000",
         "editorSuggestWidget.border": "#404040",
         "editorWidget.background": "#000000",

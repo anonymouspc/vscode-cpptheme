@@ -42,6 +42,7 @@
         "menu.border": "#e0e0e0",
         "menu.selectionBorder": "#e0e0e0",
         "menu.separatorBackground": "#e0e0e0",
+        "multiDiffEditor.headerBackground": "#ffffff",
         "peekView.border": "#e0e0e0",
         "peekViewEditor.background": "#ffffff",
         "peekViewResult.background": "#ffffff",

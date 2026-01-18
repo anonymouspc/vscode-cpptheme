@@ -1,5 +1,5 @@
-import fs            from 'fs';
 import child_process from 'child_process'
+import fs            from 'fs'
 import util          from 'util'
 child_process.promises = new Object()
 child_process.promises.execFile = util.promisify(child_process.execFile)
